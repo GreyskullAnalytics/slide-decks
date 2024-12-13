@@ -1,0 +1,8 @@
+Sales Margin % = IF(SELECTEDMEASURE() = "Dynamic Measure",[Sales Margin %], SELECTEDMEASURE())
+
+IF ( ISSELECTEDMEASURE ( [Dynamic Measure] ),"0.0%;-0.0%;0.0%", SELECTEDMEASUREFORMATSTRING() )
+
+Sales Revenue = IF(SELECTEDMEASURE() = "Dynamic Measure", [Sales Revenue], SELECTEDMEASURE())
+
+IF ( ISSELECTEDMEASURE ( [Dynamic Measure] ),"'£'#,0.00;-'£'#,0.00;'£'#,0.00", SELECTEDMEASUREFORMATSTRING() )
+
