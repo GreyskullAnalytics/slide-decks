@@ -1,3 +1,5 @@
+https://github.com/GreyskullAnalytics/Dynamic-Measures/blob/main/Dynamic%20Measure%20Calculation%20Group%20Script.csx
+
 Sales Margin % = IF(SELECTEDMEASURE() = "Dynamic Measure",[Sales Margin %], SELECTEDMEASURE())
 
 IF ( ISSELECTEDMEASURE ( [Dynamic Measure] ),"0.0%;-0.0%;0.0%", SELECTEDMEASUREFORMATSTRING() )
